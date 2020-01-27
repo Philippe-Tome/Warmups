@@ -25,10 +25,15 @@ puts params[:friends].last
 min_password = 8
 pass_valid = params[:password].size > min_password
 puts pass_valid
+puts params[:password].size > min_password
+puts "Is the password valid? #{ params[:password].size > min_password }" 
 
 # add a key-value pair to params where key is the data_sent_time and the value is the current time.
 params[:data_sent_time] = Time.now.strftime("%H:%M:%S")
 puts params[:data_sent_time]
+
+# Difference between Time.new & Time.now is that Time.new can also work as a function as well as retireve the time right now like Time.now. If passing data as a string to Time.new it will create a hash with the date/time you pass in.
+
 
 # Extension
 # Write code to check that the image is from the unsplash website.
