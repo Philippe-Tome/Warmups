@@ -13,13 +13,13 @@ class Coffee
         @size = size
         @sugar_qty = sugar_qty
     end
-    def print_order
-        puts "#{ @name }'s #{ @order }, #{ @size }, #{ @sugar_qty } sugars"
+    def to_s
+        "#{ @name }'s #{ @order }, #{ @size }, #{ @sugar_qty } sugars"
     end
 end
 
 c1 = Coffee.new('Darryl', 'latte', 'medium', 2)
-
+puts c1
 
 require 'pry'
 binding.pry
