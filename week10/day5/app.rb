@@ -5,7 +5,7 @@ class Dice
         else 
             rolled_dice_array = []
             roll_num.times do
-            rolled_dice_array << (1..6).to_a.sample
+                rolled_dice_array << (1..6).to_a.sample
             end
             rolled_dice_array
         end
